@@ -6,13 +6,7 @@
 **[Contributing](./CONTRIBUTING.md)** |
 **[Documentation](./docs)**
 
-
-[![pytest](https://github.com/ethanluoyc/magi/actions/workflows/ci.yaml/badge.svg?branch=develop)](https://github.com/ethanluoyc/magi/actions/workflows/ci.yaml)
-
 > **Note**
-> Future development of JAX agents in Magi have moved to [Corax](https://github.com/ethanluoyc/corax)
-
-Magi is a RL library in JAX that is fully compatible with [Acme](https://github.com/deepmind/acme).
 
 In addition to the features provided by Acme, Magi offers implementation of RL
 agents that are not found in the Acme repository as well as providing useful tools
@@ -39,7 +33,7 @@ pip install -U pip setuptools wheel
 # The dependencies in setup.py are abstract which allows you to pin
 # a specific version of dm-acme.
 # The following command installs the latest version of dm-acme
-pip install 'git+https://github.com/deepmind/acme.git#egg=dm-acme[jax,tf,examples]'
+pip install 'git+https://github.com/perfectCoder-dev/magi.git#egg=dm-acme[jax,tf,examples]'
 # Install magi in editable mode, with additional dependencies.
 # In case you need to run examples on GPU, you should install the
 # GPU version of JAX with a command like the following
@@ -78,19 +72,6 @@ nox test
 
 ## Contributing
 Refer to [CONTRIBUTING.md](./CONTRIBUTING.md).
-
-## Acknowledgements
-Magi is inspired by many of the open-source RL projects out there.
-Here is a (non-exhaustive) list of related libraries and packages that Magi references:
-
-* https://github.com/deepmind/acme
-* https://github.com/ikostrikov/jaxrl
-* https://github.com/tensorflow/agents
-* https://github.com/rail-berkeley/rlkit
-
-
-## License
-[Apache License 2.0](https://github.com/ethanluoyc/magi/blob/develop/LICENSE)
 
 ## Citation
 If you use Magi in your work,
